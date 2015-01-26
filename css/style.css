@@ -1,0 +1,74 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+nav {
+	padding-top: 50px;
+}
+
+
+.menu {
+	list-style: none;
+}
+
+.main-menu .main-menu-item {
+	float: left;
+	position: relative;
+}
+
+.main-menu .main-menu-item > a,
+.sub-menu .sub-menu-item > a {
+	padding: 10px 12px;
+	background: #4CAF50;
+	color: #fff;
+	display: inline-block;
+	white-space: nowrap;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.main-menu .main-menu-item > a:hover,
+.sub-menu .sub-menu-item > a:hover {
+	background: #F50057;
+}
+
+.main-menu .sub-menu {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.main-menu .main-menu-item:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+}
+
+.sub-menu .sub-menu-item > a {
+	display: block;
+	padding: 10px 20px;
+}
